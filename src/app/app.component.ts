@@ -8,9 +8,6 @@ import { Component } from '@angular/core';
       <app-jobs-filter-box></app-jobs-filter-box>
       <app-jobs-list></app-jobs-list>
     </main>
-    <footer class="footer">
-      
-    </footer>
   `,
   styles: [
     `
@@ -24,7 +21,7 @@ import { Component } from '@angular/core';
 
       .main {
         background-color: rgba(92, 165, 165, 0.1);
-        padding: 0 16.5rem;
+        padding: 0 16.5rem 7.6rem 16.5rem;
         position: absolute;
         top: 12rem;
         min-height: 100vh;

@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpeg)
+![https://fg-job-listings-with-filtering.netlify.app/](./screenshot.jpeg)
 
 ### Links
 
-- Solution URL: [GitHub repository](https://github.com/FerdinandoGeografo/job-listings-with-filtering)
-- Live Site URL: [fg-job-listings-with-filtering](https://fg-job-listings-with-filtering.netlify.app/)
+- Solution URL: [https://github.com/FerdinandoGeografo/job-listings-with-filtering](https://github.com/FerdinandoGeografo/job-listings-with-filtering)
+- Live Site URL: [https://fg-job-listings-with-filtering.netlify.app/](https://fg-job-listings-with-filtering.netlify.app/)
 
 ## My process
 
@@ -42,7 +42,7 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [rxjs](https://rxjs.dev/) - JS library
-- [Angular](https://angular.io/docs) - TS framework
+- [Angular](https://angular.io/docs) - JS framework with TypeScript
 
 ### What I learned
 
