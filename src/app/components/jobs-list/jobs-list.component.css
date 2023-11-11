@@ -20,6 +20,10 @@
 
 .job--featured {
   border-left: 5px solid rgba(92, 165, 165, 1);
+
+  .job-logo {
+    margin-left: -5px;
+  }
 }
 
 .job-details-wrapper {
