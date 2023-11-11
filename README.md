@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![https://fg-job-listings-with-filtering.netlify.app/](./screenshot.jpeg)
+![https://fg-job-listings-with-filtering.netlify.app/](./screen.jpeg)
 
 ### Links
 
