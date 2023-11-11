@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "League Spartan";
+  font-display: swap;
+  font-weight: 500, 700;
+  src: url("assets/fonts/LeagueSpartan-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.625rem;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  position: relative;
+}

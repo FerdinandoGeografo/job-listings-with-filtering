@@ -1,0 +1,55 @@
+<ul class="jobs-list">
+  <li *ngFor="let job of jobs$ | async">
+    <article class="job" [ngClass]="{ 'job--featured': job.featured }">
+      <div class="job-details-wrapper">
+        <img
+          class="job-logo"
+          [src]="'assets/' + job.logo"
+          [alt]="'Logo of company ' + (job.company | titlecase)"
+        />
+
+        <div>
+          <div class="job-main-info">
+            <span class="job-company">{{ job.company }}</span>
+            <span *ngIf="job.new" class="job-tag job-tag--new">NEW!</span>
+            <span *ngIf="job.featured" class="job-tag job-tag--featured"
+              >FEATURED</span
+            >
+          </div>
+
+          <h1
+            tabindex="0"
+            class="job-position"
+            (click)="jobService.onCategoryAdded(job.position)"
+            (keydown.enter)="jobService.onCategoryAdded(job.position)"
+          >
+            {{ job.position }}
+          </h1>
+
+          <ul class="job-extra-info">
+            <li>
+              <span>{{ job.postedAt }}</span>
+            </li>
+            <li>
+              <span>{{ job.contract }}</span>
+            </li>
+            <li>
+              <span>{{ job.location }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="categories">
+        <li *ngFor="let category of job.categories">
+          <button
+            class="category-btn"
+            (click)="jobService.onCategoryAdded(category)"
+          >
+            {{ category }}
+          </button>
+        </li>
+      </ul>
+    </article>
+  </li>
+</ul>

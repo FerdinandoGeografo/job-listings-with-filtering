@@ -1,0 +1,127 @@
+.filter-container {
+  max-width: 111rem;
+  min-height: 7.2rem;
+  margin: 0 auto -3.6rem auto;
+  padding: 2rem 4rem;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 1.5rem 2rem -0.5rem rgba(13, 113, 130, 0.15);
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.filter-container.open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  margin-bottom: 0;
+}
+
+.filters-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.filter {
+  display: flex;
+}
+
+.filter-text {
+  padding: 0.5rem 0.9rem 0.3rem 0.8rem;
+  background-color: rgba(92, 165, 165, 0.1);
+  color: rgba(92, 165, 165, 1);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: -0.12px;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.filter-btn {
+  display: block;
+  background-color: rgba(92, 165, 165, 1);
+  padding: 0.9rem;
+  outline: none;
+  border: none;
+  border-radius: 0 0.4rem 0.4rem 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: rgba(43, 57, 57, 1);
+}
+
+.filter-img {
+  display: block;
+}
+
+.clear-btn {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: -0.12px;
+  background: transparent;
+  color: rgba(124, 143, 143, 1);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.clear-btn:hover,
+.clear-btn:focus {
+  color: rgba(92, 165, 165, 1);
+}
+
+.clear-btn::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.5px;
+  background-color: rgba(92, 165, 165, 1);
+
+  position: absolute;
+  bottom: 0.65rem;
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+
+.clear-btn:hover::after,
+.clear-btn:focus::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 82em) {
+  .filter-container {
+    gap: 2rem;
+  }
+
+  .filters-list {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
+
+@media (max-width: 71em) {
+  .filter-container {
+    padding: 2rem 2.4rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .filter-container {
+    padding: 2rem 2.5rem 1.9rem 2rem;
+  }
+}

@@ -1,0 +1,25 @@
+<ng-container *ngIf="categories$ | async as categories">
+  <aside class="filter-container" [ngClass]="{ open: categories.length > 0 }">
+    <ul class="filters-list">
+      <li *ngFor="let category of categories">
+        <div class="filter">
+          <span class="filter-text">{{ category }}</span>
+          <button
+            class="filter-btn"
+            (click)="jobService.onCategoryRemoved(category)"
+          >
+            <img
+              class="filter-img"
+              src="../../../assets/images/icon-remove.svg"
+              alt=""
+            />
+          </button>
+        </div>
+      </li>
+    </ul>
+
+    <button class="clear-btn" (click)="jobService.onClearCategories()">
+      Clear
+    </button>
+  </aside>
+</ng-container>
