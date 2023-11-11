@@ -19,7 +19,7 @@
 }
 
 .job--featured {
-  border-left: 5px solid rgba(92, 165, 165, 1);
+  box-shadow: inset 0.5rem 0 0 0 rgba(92, 165, 165, 1);
 }
 
 .job-details-wrapper {
