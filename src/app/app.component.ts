@@ -35,6 +35,10 @@ import { Component } from '@angular/core';
       }
 
       @media (max-width: 30em) {
+        .header {
+          background-image: url("../assets/images/bg-header-mobile.svg");
+        }
+
         .main {
           padding: 0 2.4rem;
         }
